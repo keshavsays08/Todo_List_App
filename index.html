@@ -1,0 +1,53 @@
+<!-- Create a TODO app capable og storing your TODOs in local storage Add an option to create, deleteand access all the TODOs-->
+<!-- Try to make UI as good as Possible -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO WEB-APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div >
+        <span>
+        <span id="date"></span>
+
+        <span class="title">
+            TODO LIST MAKER
+        </span>
+        </span>
+    </div>
+    <div class="inputSection">
+        <div id="wrapper">
+
+            <h2>Type Today's Tasks <button id="clearAllBtn" style=" float: right;"><a href=""
+                        style="text-decoration: none;">Clear All</a></button></h2>
+            <div class="taskInput">
+                <textarea id="addTask" placeholder="Type your task here..." required></textarea>
+
+                <button id="saveTask" >Save Task</button>
+            </div>
+        </div>
+
+        <div class="to-do-list">
+
+        </div>
+       
+
+        <script src="script.js"></script>
+        <script>
+            const textarea = document.querySelector("textarea");
+            textarea.addEventListener("keyup", e => {
+                textarea.style.height = "40px"
+                let scHeight = e.target.scrollHeight;
+                textarea.style.height = `${scHeight}px`;
+            });
+        </script>
+
+</body>
+
+</html>
