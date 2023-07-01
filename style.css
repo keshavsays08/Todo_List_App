@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Andika&family=Bebas+Neue&family=Cinzel&family=Dancing+Script:wght@400;700&family=Montserrat:wght@500&family=Oswald:wght@500&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Shadows+Into+Light&family=Signika+Negative:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+#date {
+    color: rgb(5, 5, 5);
+    font-family: 'Poppins', sans-serif
+}
+
+.title {
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-size: small;
+    float: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.6;
+    margin-left: 480px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.inputSection {
+    /* font-family: 'Bebas Neue', sans-serif; */
+    color: #d9d9d9;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    height: 15vh;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* .wrapper{
+      width: 470px;
+      background: #fff;
+      border-radius: 5px;
+      padding: 25px 25px 30px;
+} */
+#wrapper h2 {
+    color: linear-gradient(to right, #141e30, #243b55);
+    font-size: 20px;
+    text-align: left;
+}
+
+#wrapper textarea {
+    width: 80%;
+    height: 40px;
+    max-height: 60px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    resize: none;
+    scroll-behavior: none;
+    outline: none;
+    border-color: #585353;
+}
+
+textarea:is(:focus, :valid) {
+    border-color: #ffe100fb;
+    border-width: 3px;
+    padding: 14px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskInput {
+    display: flex;
+    align-items: center;
+}
+
+#newTask {
+    flex: 1;
+    height: 40px;
+    max-height: 60px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    resize: none;
+    scroll-behavior: none;
+    outline: none;
+    border-color: #585353;
+}
+
+#saveTask {
+    padding: 7.3px 20px;
+    background-image: linear-gradient(25deg,#4ee958,#99c81a 50%);
+    box-shadow: 0 0 6px rgba(119, 211, 99, 0.2);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 30px auto; */
+    /* display: block; */
+    text-align: center;
+    /* display: none; */
+    margin-left: 10px;
+}
+#saveTask:hover{
+    background-image: linear-gradient(25deg,#4ee958,#99c81a 100%);
+}
+
+/* .todolists {
+    background-color: rgb(0, 0, 0);
+    height: 40vh;
+    width: 100%;
+    opacity: 0.8;
+    margin-top: 5%;
+} */
+.saveBtn{
+     /* background-color: rgb(61, 61, 140);
+    color: white;
+    border-radius: 3px;
+    padding: 2px 3px; */
+    padding: 2.5px 15px;
+    background-image: linear-gradient(25deg,#98deb9,#2fa84f 50%);
+ 
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 30px auto; */
+    /* display: block; */
+    margin-top: 2px;
+}
+.saveBtn:hover{
+    background-image: linear-gradient(25deg,#98deb9,#2fa84f 100%);
+}
+.cancelBtn{
+     /* background-color: rgb(61, 61, 140);
+    color: white;
+    border-radius: 3px;
+    padding: 2px 3px; */
+    padding: 2.5px 15px;
+    background-image: linear-gradient(25deg,#c27d9d,#910a21 50%);
+ 
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 30px auto; */
+    /* display: block; */
+    margin-top: 2px;
+}
+.cancelBtn:hover{
+    background-image: linear-gradient(25deg,#c27d9d,#910a21 150%);
+}
+.tasks {
+    margin-bottom: 10px; /* Add margin-bottom to create space between tasks */
+    /* or */
+    padding-bottom: 10px; /* Add padding-bottom to create space between tasks */
+  }
+.to-do-list{
+    margin-top: 50px ;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.deleteBtn {
+    /* background-color: rgb(127, 46, 46);
+    color: white;
+    border-radius: 3px;
+    padding: 2px 3px; */
+    padding: 7.3px 20px;
+    background-image: linear-gradient(25deg,#f5e621,#ec851e 50%);
+    box-shadow: 0 0 6px rgba(149, 92, 114, 0.2);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 30px auto; */
+    /* display: block; */
+    text-align: center;
+}
+.deleteBtn:hover{
+    background-image: linear-gradient(25deg,#f5e621,#ec851e 25%);
+    
+}
+
+.editBtn {
+    /* background-color: rgb(61, 61, 140);
+    color: white;
+    border-radius: 3px;
+    padding: 2px 3px; */
+    padding: 7.3px 20px;
+    background-image: linear-gradient(25deg,#7fdde0,#1ea7ec 50%);
+    box-shadow: 0 0 6px rgba(89, 147, 176, 0.2);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 30px auto; */
+    /* display: block; */
+    text-align: center;
+
+}
+.editBtn:hover{
+    background-image: linear-gradient(25deg,#7fdde0,#1ea7ec 100%);
+}
+.update-controller{
+    display: none;
+}
+#clearAllBtn{
+     /* background-color: rgb(61, 61, 140);
+    color: white;
+    border-radius: 3px;
+    padding: 2px 3px; */
+    padding: 2.5px 15px;
+    background-image: linear-gradient(25deg,#9d0ca5,#ec48e9 50%);
+ 
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 30px auto; */
+    /* display: block; */
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#clearAllBtn:hover{
+  
+    background-image: linear-gradient(25deg,#9d0ca5,#ec48e9 20%);
+}
