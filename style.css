@@ -93,6 +93,8 @@ textarea::-webkit-scrollbar {
     width: 100%;
     display: flex;
     align-items: center;
+    padding-bottom:2rem;
+   margin-bottom:2rem;
 }
 
 #newTask {
